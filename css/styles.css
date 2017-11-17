@@ -1,12 +1,11 @@
 @font-face {
   font-family: daisy;
-  src: url("fonts/daisy.ttf");
+  src: url("fonts/TheSkinny.otf");
 }
 
 body {
-  background-image: url("dark_embroidery.png");
+  background-image: url("light_grey.png");
   font-family: sans-serif;
-  color: white;
   font-family: daisy;
   font-size: 1.5em;
 }
@@ -21,6 +20,7 @@ body {
   padding: 10px;
   position: relative;
   border-radius: 5px;
+  display: block;
 }
 
 h1 {
@@ -28,26 +28,35 @@ h1 {
   top: 2px;
   position: absolute;
   width: 100%;
-  font-size: 5em;
+  font-size: 4em;
+  margin-left: 20px;
+  clear: both;
+  box-sizing: border-box;
 }
 
 /*NAVIGATION BAR*/
 .navbar {
+  position: absolute;
+  display: block;
   overflow: auto;
-  margin-bottom: 0;
+  top: 2px;
+  right: 10px;
 }
 .navbar li {
-  display: inline-block;
+  display: inline;
   list-style: none;
   padding: 10px;
-  float: right;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 .navbar li:hover {
   cursor: crosshair;
   color: red;
 }
 
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
 
 .display {
   margin: 1%;
@@ -63,48 +72,77 @@ img {
   width: 100%;
 }
 .product::after {
+  color: red;
   content: "Limited stock!";
-  font-size: 1.5em;
+  font-size: 1.0em;
+  margin-left: -20%;
+  position: relative;
 }
 
 /*PRODUCT INFORMATION SECTION*/
+.product img {
+  width: 60%;
+}
 .product-purchase {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   box-sizing: border-box;
   float: right;
-  margin-right: 12px;
+  margin: 12px;
   padding: 15px;
+  width: 30%;
+  overflow: auto;
 }
-
 .product-info {
+  position: absolute;
   display: block;
   text-align: justify;
-  float: left;
+  padding: 2px;
 }
-
 .name {
   font-size: 2em;
 }
-
 .brand {
   color: gray;
+  margin: 4px;
 }
-
 .price {
   font-size: 1.5em;
 }
-
 .add-to-bag {
   border-radius: 5px;
+  font-weight: lighter;
+  font-family: daisy;
   font-size: 1em;
-  padding: 5px;
-  width: 80%;
+  width: 90%;
+  text-align: center;
+}
+
+.img-gallery {
+  position: absolute;
+  vertical-align: middle;
+  box-sizing: inherit;
+}
+
+.img-gallery img {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 20%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.display {
+  position: relative;
 }
 
 table {
-  background: gray;
+  background: lightgray;
   border-collapse: collapse;
+  color: white;
+  position: relative;
+  border-radius: 5px;
 }
 
 td {
@@ -115,7 +153,7 @@ td {
 }
 
 th {
-  background: black;
+  background: darkgray;
   padding-top: 5px;
   padding-bottom: 5px;
 }
