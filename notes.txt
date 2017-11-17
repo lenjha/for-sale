@@ -1,0 +1,30 @@
+PART ONE
+At least 1 centered element
+List/summary of features
+At least 1 large image with caption that has position:absolute
+At least 1 table or form styled with CSS
+Gallery of smaller images (e.g. similar products)
+
+PART TWO
+border-box
+float
+display: block
+display: inline
+centered content
+pseudo-element
+pseudo-class
+clear-fix
+positional selector
+selector combination
+
+PART THREE
+table in README.md listing all ten terms, description of each, and how/why you used it
+
+
+
+
+
+Ideas
+  icons
+  navbar
+  login

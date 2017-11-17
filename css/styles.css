@@ -1,0 +1,125 @@
+@font-face {
+  font-family: daisy;
+  src: url("fonts/daisy.ttf");
+}
+
+body {
+  background-image: url("dark_embroidery.png");
+  font-family: sans-serif;
+  color: white;
+  font-family: daisy;
+  font-size: 1.5em;
+}
+
+/*HEADER GOES HERE*/
+.header {
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+
+h1 {
+  left: 0;
+  top: 2px;
+  position: absolute;
+  width: 100%;
+  font-size: 5em;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+  overflow: auto;
+  margin-bottom: 0;
+}
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  float: right;
+  font-size: 2em;
+}
+.navbar li:hover {
+  cursor: crosshair;
+  color: red;
+}
+
+
+.display {
+  margin: 1%;
+}
+.fa-shopping-bag {
+  margin-left: 90px;
+}
+img {
+  border-radius: 4%;
+}
+.product {
+  position: relative;
+  width: 100%;
+}
+.product::after {
+  content: "Limited stock!";
+  font-size: 1.5em;
+}
+
+/*PRODUCT INFORMATION SECTION*/
+.product-purchase {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-sizing: border-box;
+  float: right;
+  margin-right: 12px;
+  padding: 15px;
+}
+
+.product-info {
+  display: block;
+  text-align: justify;
+  float: left;
+}
+
+.name {
+  font-size: 2em;
+}
+
+.brand {
+  color: gray;
+}
+
+.price {
+  font-size: 1.5em;
+}
+
+.add-to-bag {
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 5px;
+  width: 80%;
+}
+
+table {
+  background: gray;
+  border-collapse: collapse;
+}
+
+td {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+th {
+  background: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: darkgray;
+}
